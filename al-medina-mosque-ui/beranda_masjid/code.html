@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Al-Medina Mosque - Dashboard</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "background": "#fbf9f5",
+                    "on-secondary": "#ffffff",
+                    "outline-variant": "#bfc9c3",
+                    "tertiary": "#003623",
+                    "secondary": "#735c00",
+                    "on-tertiary-fixed": "#002113",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed": "#6ffbbe",
+                    "primary-container": "#064e3b",
+                    "surface": "#fbf9f5",
+                    "on-tertiary-fixed-variant": "#005236",
+                    "on-primary-fixed-variant": "#0b513d",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed": "#241a00",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f5f3ef",
+                    "on-primary-container": "#80bea6",
+                    "primary": "#003527",
+                    "inverse-surface": "#30312e",
+                    "inverse-on-surface": "#f2f0ed",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed-dim": "#4edea3",
+                    "on-secondary-fixed-variant": "#574500",
+                    "secondary-container": "#fed65b",
+                    "surface-dim": "#dbdad6",
+                    "on-surface": "#1b1c1a",
+                    "surface-container-high": "#eae8e4",
+                    "error": "#ba1a1a",
+                    "inverse-primary": "#95d3ba",
+                    "tertiary-container": "#004f34",
+                    "primary-fixed": "#b0f0d6",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#745c00",
+                    "outline": "#707974",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-background": "#1b1c1a",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed": "#ffe088",
+                    "primary-fixed-dim": "#95d3ba",
+                    "surface-bright": "#fbf9f5",
+                    "on-primary-fixed": "#002117",
+                    "surface-container-highest": "#e4e2de",
+                    "surface-tint": "#2b6954",
+                    "on-surface-variant": "#404944",
+                    "surface-container": "#efeeea",
+                    "surface-variant": "#e4e2de",
+                    "on-tertiary-container": "#31c98f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "16px",
+                    "stack-lg": "32px",
+                    "stack-sm": "8px",
+                    "stack-md": "16px",
+                    "unit": "8px",
+                    "container-padding": "24px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Libre Caslon Text"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-xl": ["Libre Caslon Text"],
+                    "headline-md": ["Libre Caslon Text"],
+                    "body-sm": ["Plus Jakarta Sans"],
+                    "headline-lg-mobile": ["Libre Caslon Text"],
+                    "label-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #fbf9f5;
+            color: #1b1c1a;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .pattern-divider {
+            background-image: radial-gradient(#064e3b 0.5px, transparent 0.5px);
+            background-size: 16px 16px;
+            opacity: 0.05;
+        }
+        .girih-texture {
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l15 30-15 30-15-30z' fill='none' stroke='%23064e3b' stroke-width='0.5'/%3E%3C/svg%3E");
+            opacity: 0.03;
+        }
+    </style>
+</head>
+<body class="bg-background min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface dark:bg-surface-container-low border-b border-outline-variant/10">
+<div class="flex justify-between items-center px-gutter h-16 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">mosque</span>
+<h1 class="font-headline-md text-headline-md text-primary dark:text-primary-fixed tracking-tight">Al-Medina Mosque</h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-full hover:bg-primary/5 transition-colors active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-on-surface-variant">notifications</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-20 px-gutter max-w-7xl mx-auto space-y-stack-lg">
+<!-- Status Ibadah Hero Card -->
+<section class="relative overflow-hidden rounded-3xl bg-primary-container text-on-primary p-8 md:p-12 shadow-sm">
+<div class="absolute inset-0 girih-texture pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+<div class="space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-tertiary-container text-tertiary-fixed-dim text-label-md font-label-md uppercase tracking-widest">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">stars</span>
+                        Status Ibadah
+                    </div>
+<h2 class="font-headline-xl text-headline-xl text-white">Malam ini Shalat Tarawih</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-md">Menyambut malam penuh keberkahan di bulan suci Ramadhan 1445 H. Mari raih pahala berlipat ganda.</p>
+</div>
+<div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10 min-w-[240px] text-center">
+<p class="font-label-md text-label-md text-primary-fixed-dim uppercase tracking-wider mb-2">Menuju Waktu Isya</p>
+<div class="flex justify-center items-baseline gap-1" id="countdown-timer">
+<span class="font-headline-xl text-headline-xl text-white" id="timer-val">00:42:15</span>
+</div>
+<div class="mt-4 flex justify-center gap-2">
+<div class="w-2 h-2 rounded-full bg-secondary animate-pulse"></div>
+<span class="font-label-md text-label-md text-white/80">Persiapan Berjamaah</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Prayer Times Grid -->
+<section>
+<div class="flex justify-between items-end mb-6">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary">Jadwal Shalat</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Selasa, 12 Maret 2024 • 1 Ramadhan 1445 H</p>
+</div>
+<button class="text-primary font-label-md hover:underline flex items-center gap-1">
+                    Selengkapnya <span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+<!-- Subuh -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/10 flex flex-col items-center gap-2 text-center transition-all hover:border-primary/20">
+<span class="material-symbols-outlined text-on-surface-variant">wb_twilight</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Subuh</span>
+<span class="font-headline-md text-headline-md text-primary">04:42</span>
+</div>
+<!-- Dzuhur -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/10 flex flex-col items-center gap-2 text-center transition-all hover:border-primary/20">
+<span class="material-symbols-outlined text-on-surface-variant">light_mode</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Dzuhur</span>
+<span class="font-headline-md text-headline-md text-primary">12:05</span>
+</div>
+<!-- Ashar -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/10 flex flex-col items-center gap-2 text-center transition-all hover:border-primary/20">
+<span class="material-symbols-outlined text-on-surface-variant">wb_sunny</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Ashar</span>
+<span class="font-headline-md text-headline-md text-primary">15:14</span>
+</div>
+<!-- Maghrib -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/10 flex flex-col items-center gap-2 text-center transition-all hover:border-primary/20">
+<span class="material-symbols-outlined text-on-surface-variant">nights_stay</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Maghrib</span>
+<span class="font-headline-md text-headline-md text-primary">18:12</span>
+</div>
+<!-- Isya (Active) -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border-l-4 border-l-secondary shadow-sm flex flex-col items-center gap-2 text-center ring-1 ring-secondary/10">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">bedtime</span>
+<span class="font-label-md text-label-md text-secondary uppercase font-bold">Isya</span>
+<span class="font-headline-md text-headline-md text-primary">19:22</span>
+</div>
+</div>
+</section>
+<!-- Bento Layout: Important Notice & News -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Pengumuman Penting -->
+<section class="lg:col-span-1 space-y-6">
+<h3 class="font-headline-md text-headline-md text-primary">Pengumuman</h3>
+<div class="bg-secondary-container/30 border border-secondary/20 p-6 rounded-3xl relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-6xl text-secondary">campaign</span>
+</div>
+<span class="inline-block px-3 py-1 bg-secondary/10 text-secondary font-label-md rounded-full mb-4">Ramadhan 1445H</span>
+<h4 class="font-headline-md text-headline-md-mobile text-on-secondary-container mb-3 leading-tight">Penetapan Hari Raya Eid Al-Fitr</h4>
+<p class="font-body-md text-body-md text-on-secondary-container mb-6 opacity-80">Menunggu hasil Sidang Isbat &amp; pemantauan hilal oleh kementerian agama dan lembaga berwenang.</p>
+<div class="flex items-center gap-3 p-3 bg-white/50 rounded-xl">
+<span class="material-symbols-outlined text-secondary">hourglass_top</span>
+<p class="font-label-md text-label-md text-secondary">Status: Menunggu Hilal</p>
+</div>
+</div>
+<!-- Featured Hadith -->
+<div class="bg-surface-container-low p-6 rounded-3xl space-y-4 border border-outline-variant/5">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<h5 class="font-label-md text-label-md uppercase tracking-wider">Hadist Hari Ini</h5>
+</div>
+<p class="font-body-md text-body-md italic text-on-surface-variant leading-relaxed">
+                        "Barangsiapa yang berpuasa Ramadhan karena iman dan mengharap pahala, maka diampuni dosa-dosanya yang telah lalu."
+                    </p>
+<p class="font-label-md text-label-md text-primary font-bold">(HR. Bukhari &amp; Muslim)</p>
+</div>
+</section>
+<!-- Latest News -->
+<section class="lg:col-span-2 space-y-6">
+<div class="flex justify-between items-center">
+<h3 class="font-headline-md text-headline-md text-primary">Kabar Masjid</h3>
+<button class="text-primary font-label-md flex items-center gap-1 hover:underline">
+                        Lihat Semua Kabar <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- News Item 1 -->
+<article class="bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/10 hover:shadow-lg transition-all group">
+<div class="h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A serene wide-angle shot of a beautiful modern mosque interior during the holy month of Ramadan. Soft natural golden light streams through geometric windows onto a plush emerald green carpet. Many community members are gathered peacefully, reflecting a quiet spiritual atmosphere of Al-Medina Mosque. The colors are rich emerald, cream, and warm wood tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiLtOrHainDumrXIaaQPctypG4uVAqrwrQEMHryolmE2R3CmjOlYv2pAh2JYgDKsYm-CdxZUQKP4_NuMiQv4M1_L3KNIHh5XUgd7-xVivSiKiqBDKjV35fSY-1HZqhQ-mTk7e8GfGxaqa1299dWbLXwTZC-JH8L5hXSa_VbCz7E_3-FYN94X33VnNVj5xio1lueUuHf08SoeX-NP8jCvvSDIFHTrw1TPb_wXEHiWhbu0fKiOOCLE5Q5g"/>
+</div>
+<div class="p-6 space-y-3">
+<span class="text-label-md font-label-md text-tertiary-container bg-tertiary-fixed/30 px-2 py-0.5 rounded">Zakat</span>
+<h4 class="font-headline-md text-headline-md-mobile text-primary leading-snug">Penerimaan Zakat Fitrah &amp; Mal Kini Dibuka</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Layanan konter zakat tersedia di area serbaguna setiap hari setelah shalat ashar hingga menjelang isya.</p>
+<div class="pt-2 flex justify-between items-center text-on-surface-variant">
+<span class="font-label-md text-label-md">2 Jam yang lalu</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- News Item 2 -->
+<article class="bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/10 hover:shadow-lg transition-all group">
+<div class="h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A detailed, vibrant close-up of a communal Iftar meal table at sunset, featuring traditional dates, water, and various savory Middle Eastern appetizers. The lighting is warm and inviting, capturing the communal spirit of a mosque gathering. The aesthetic is modern but respectful of tradition, with elegant white ceramic plates and gold-accented cutlery on a clean linen tablecloth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzgyZJ9X6xip7eMj_7B0FWH-8yoXGmqxYZKzGfXvlVN4nVCCy4x78SbPOlz5SDi6dXjnmcaFq1p_db2Cky3UI3MByYrYqEhZX2fTgzo1VicaGeeU9si6ZQG5PsgpiNvsmpu_QCx4E0n1Vs7Ak8BlcP9CahYBl5nNFB8cgxcBNZiIQFnMEPV-KHY0YcPaIGC0ZbVc1ZH99oWcW4iG0wEbmhw5xOPJL-fMSmDruM9LGEo5ks1IHuEukrQQ"/>
+</div>
+<div class="p-6 space-y-3">
+<span class="text-label-md font-label-md text-primary bg-primary-fixed/30 px-2 py-0.5 rounded">Kegiatan</span>
+<h4 class="font-headline-md text-headline-md-mobile text-primary leading-snug">Program Iftar Bersama &amp; Ta'jil Gratis</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Masjid Al-Medina mengundang seluruh jamaah untuk berbuka puasa bersama setiap hari di halaman utama.</p>
+<div class="pt-2 flex justify-between items-center text-on-surface-variant">
+<span class="font-label-md text-label-md">Kemarin</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+</div>
+<!-- Pattern Divider -->
+<div class="w-full h-10 pattern-divider"></div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 rounded-t-xl border-t border-outline-variant/10 bg-surface/95 backdrop-blur-md shadow-sm">
+<div class="flex justify-around items-center h-20 px-4 pb-2 max-w-7xl mx-auto">
+<!-- Home (Active) -->
+<a class="flex flex-col items-center justify-center text-primary dark:text-tertiary-fixed-dim font-bold bg-primary/5 rounded-full px-4 py-1 hover:text-primary transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<!-- Prayers -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:text-primary transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">schedule</span>
+<span class="font-label-md text-label-md">Prayers</span>
+</a>
+<!-- News -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:text-primary transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">campaign</span>
+<span class="font-label-md text-label-md">News</span>
+</a>
+<!-- Mosque -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:text-primary transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">info</span>
+<span class="font-label-md text-label-md">Mosque</span>
+</a>
+</div>
+</nav>
+<!-- Simple Interactive Countdown Script -->
+<script>
+        function updateTimer() {
+            const now = new Date();
+            // Static mock target for demo: 19:22:00
+            const target = new Date();
+            target.setHours(19, 22, 0);
+            
+            let diff = target - now;
+            if (diff < 0) {
+                // If past today's time, show a mock "Next Prayer" message
+                document.getElementById('timer-val').innerText = "Sudah Masuk";
+                return;
+            }
+
+            const h = Math.floor(diff / 3600000);
+            const m = Math.floor((diff % 3600000) / 60000);
+            const s = Math.floor((diff % 60000) / 1000);
+            
+            const displayH = h < 10 ? '0' + h : h;
+            const displayM = m < 10 ? '0' + m : m;
+            const displayS = s < 10 ? '0' + s : s;
+            
+            document.getElementById('timer-val').innerText = `${displayH}:${displayM}:${displayS}`;
+        }
+        
+        setInterval(updateTimer, 1000);
+        updateTimer();
+    </script>
+</body></html>

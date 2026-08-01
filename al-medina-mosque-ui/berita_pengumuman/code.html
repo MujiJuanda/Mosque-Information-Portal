@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Al-Medina Mosque - News &amp; Announcements</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .girih-pattern {
+            background-color: #fbf9f5;
+            background-image: url("https://www.transparenttextures.com/patterns/p6.png");
+            opacity: 0.03;
+        }
+        .bento-card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -10px rgba(6, 78, 59, 0.12);
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fbf9f5;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #bfc9c3;
+            border-radius: 10px;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "background": "#fbf9f5",
+                      "on-secondary": "#ffffff",
+                      "outline-variant": "#bfc9c3",
+                      "tertiary": "#003623",
+                      "secondary": "#735c00",
+                      "on-tertiary-fixed": "#002113",
+                      "error-container": "#ffdad6",
+                      "tertiary-fixed": "#6ffbbe",
+                      "primary-container": "#064e3b",
+                      "surface": "#fbf9f5",
+                      "on-tertiary-fixed-variant": "#005236",
+                      "on-primary-fixed-variant": "#0b513d",
+                      "on-error": "#ffffff",
+                      "on-secondary-fixed": "#241a00",
+                      "on-error-container": "#93000a",
+                      "surface-container-low": "#f5f3ef",
+                      "on-primary-container": "#80bea6",
+                      "primary": "#003527",
+                      "inverse-surface": "#30312e",
+                      "inverse-on-surface": "#f2f0ed",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-fixed-dim": "#4edea3",
+                      "on-secondary-fixed-variant": "#574500",
+                      "secondary-container": "#fed65b",
+                      "surface-dim": "#dbdad6",
+                      "on-surface": "#1b1c1a",
+                      "surface-container-high": "#eae8e4",
+                      "error": "#ba1a1a",
+                      "inverse-primary": "#95d3ba",
+                      "tertiary-container": "#004f34",
+                      "primary-fixed": "#b0f0d6",
+                      "on-primary": "#ffffff",
+                      "on-secondary-container": "#745c00",
+                      "outline": "#707974",
+                      "secondary-fixed-dim": "#e9c349",
+                      "on-background": "#1b1c1a",
+                      "on-tertiary": "#ffffff",
+                      "secondary-fixed": "#ffe088",
+                      "primary-fixed-dim": "#95d3ba",
+                      "surface-bright": "#fbf9f5",
+                      "on-primary-fixed": "#002117",
+                      "surface-container-highest": "#e4e2de",
+                      "surface-tint": "#2b6954",
+                      "on-surface-variant": "#404944",
+                      "surface-container": "#efeeea",
+                      "surface-variant": "#e4e2de",
+                      "on-tertiary-container": "#31c98f"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "16px",
+                      "stack-lg": "32px",
+                      "stack-sm": "8px",
+                      "stack-md": "16px",
+                      "unit": "8px",
+                      "container-padding": "24px"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Libre Caslon Text"],
+                      "body-lg": ["Plus Jakarta Sans"],
+                      "body-md": ["Plus Jakarta Sans"],
+                      "headline-xl": ["Libre Caslon Text"],
+                      "headline-md": ["Libre Caslon Text"],
+                      "body-sm": ["Plus Jakarta Sans"],
+                      "headline-lg-mobile": ["Libre Caslon Text"],
+                      "label-md": ["Plus Jakarta Sans"]
+              },
+              "fontSize": {
+                      "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                      "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                      "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen pb-24 md:pb-0 md:pt-16">
+<!-- Top App Bar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface dark:bg-surface-container-low border-b border-outline-variant/10">
+<div class="flex justify-between items-center px-gutter h-16 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed" style="font-variation-settings: 'opsz' 32;">mosque</span>
+<h1 class="font-headline-md text-headline-md text-primary dark:text-primary-fixed tracking-tight">Al-Medina Mosque</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-primary/5 transition-colors active:scale-95">
+<span class="material-symbols-outlined text-on-surface-variant">notifications</span>
+</button>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-all" href="#">Home</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-all" href="#">Prayers</a>
+<a class="text-primary font-bold font-label-md" href="#">News</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-all" href="#">Mosque</a>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-gutter py-8 mt-16 md:mt-0">
+<!-- Search & Filter Section -->
+<section class="mb-stack-lg">
+<div class="relative max-w-2xl mx-auto mb-stack-md">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline">search</span>
+</div>
+<input class="w-full pl-12 pr-4 py-4 rounded-xl border-none bg-surface-container-low focus:ring-2 focus:ring-secondary/30 text-body-md transition-all" placeholder="Search announcements, lectures, or events..." type="text"/>
+</div>
+<div class="flex gap-2 overflow-x-auto pb-2 scrollbar-hide no-scrollbar justify-center">
+<button class="px-6 py-2 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md">All Updates</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:bg-primary/5 transition-colors">Lectures</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:bg-primary/5 transition-colors">Community</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:bg-primary/5 transition-colors">Charity</button>
+</div>
+</section>
+<!-- Featured News (Asymmetric Layout) -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-stack-md mb-stack-lg">
+<!-- Main Featured Card -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-2xl bg-surface-container-lowest border border-outline-variant/10 bento-card-hover">
+<div class="h-64 md:h-[400px] w-full overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="A serene wide-angle shot of a grand mosque interior during a community gathering. The space is filled with soft, warm golden light from intricate chandeliers. Men and children are seated in circles on a lush emerald green carpet, engaged in conversation. The architecture features soaring white arches and subtle geometric girih patterns, creating a peaceful and spiritual atmosphere of community connection." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAayxM1ws3w9VJdhx5wbuI9ERKyKs2Znra5mNO9Z31L_PAw1XlqwL-n-aqZHqI5ULPMEkZ9inal66HIv3TJ6UmF263UO2LJ9bfS62okf9wVHbIM16iiMypB0r4pjdcJPPxmlncrMHzxlx15abNMOQWUIMQET75qvigSBochfXiCGTSl69dEnfkewCtAVh6FUSk2rvjk_BvIEpxWA38mIW_qi7QMtMgrmKNfCvLTwZayAHU5ef_OLVtHVQ')"></div>
+</div>
+<div class="p-stack-md">
+<div class="flex items-center gap-2 mb-2">
+<span class="px-3 py-1 rounded-full bg-primary/10 text-primary font-label-md text-label-md">Community Event</span>
+<span class="text-on-surface-variant font-label-md text-label-md">Oct 24, 2023</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-2">Annual Community Iftar &amp; Youth Mentorship Program</h2>
+<p class="text-on-surface-variant font-body-md line-clamp-2">Join us for an evening of spiritual reflection and community building. We are launching our new mentorship initiative for the youth of our community to foster growth and leadership...</p>
+<button class="mt-4 text-secondary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                        Read full story <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Side Featured Items -->
+<div class="md:col-span-4 flex flex-col gap-stack-md">
+<div class="flex-1 bg-surface-container-lowest rounded-2xl p-stack-md border border-outline-variant/10 bento-card-hover">
+<span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary font-label-md text-label-md mb-3 inline-block">Weekly Lecture</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">The Path of Patience: A Journey Through Surah Yusuf</h3>
+<p class="text-on-surface-variant text-sm mb-4">Every Friday after Maghrib with Sheikh Dr. Ibrahim Hassan.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-on-surface-variant text-label-md">Oct 20, 2023</span>
+<button class="p-2 rounded-full hover:bg-primary/5"><span class="material-symbols-outlined text-primary">bookmark</span></button>
+</div>
+</div>
+<div class="flex-1 bg-primary text-on-primary rounded-2xl p-stack-md bento-card-hover relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="font-headline-md text-headline-md mb-2">Winter Blanket Drive</h3>
+<p class="opacity-80 text-sm mb-4">Support our local homeless shelters as temperatures drop. Drop-off at the main entrance.</p>
+<button class="px-4 py-2 rounded-full bg-secondary text-on-secondary font-label-md">Donate Now</button>
+</div>
+<div class="absolute -bottom-8 -right-8 opacity-10 rotate-12">
+<span class="material-symbols-outlined" style="font-size: 120px;">volunteer_activism</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Grid Feed Section -->
+<h3 class="font-headline-md text-primary mb-stack-md">Recent Updates</h3>
+<section class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
+<!-- News Card 1 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/10 bento-card-hover">
+<div class="h-48 bg-cover bg-center" data-alt="A macro shot of hand-painted ceramic tiles featuring traditional Islamic geometric patterns in shades of emerald green, white, and subtle gold. The lighting is soft and natural, emphasizing the tactile texture and craftsmanship of the tiles. This represents a project for mosque restoration and artistic preservation, embodying a modern spiritual and minimalist aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDphcl9RyTDetaNP422keqGFmBIavFZhwtYLyArdoASWMeugl-Tcu9r8Dg6MC9-PGnattNt0OCOkZQbfuCxIzAL4KDApmsp07-2uKFpcTkJ1RHa4XeLuucgjH7PqPcmi75HNWhz5OBfzePBmq5TQdrClvG9jD8_a6thVCNy30y1-5EA95G0-nubaHS2KJUBWw9EmgMxu2sc-7S_5i6ToXtbkAwKOzJ9Yl4h_9jq-YzfUhjzsY6O_YjCmQ')"></div>
+<div class="p-stack-md">
+<span class="text-on-surface-variant font-label-md text-label-md block mb-1">Updates • Oct 18</span>
+<h4 class="font-headline-md text-primary mb-2">Main Prayer Hall Restoration Project</h4>
+<p class="text-on-surface-variant text-sm line-clamp-3">We are excited to begin the phase two of our prayer hall restoration, incorporating sustainable materials and traditional Girih designs.</p>
+</div>
+</div>
+<!-- News Card 2 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/10 bento-card-hover">
+<div class="h-48 bg-cover bg-center" data-alt="A high-quality digital photograph of an open Quran resting on a handcrafted wooden rehal stand. The scene is illuminated by the soft light of a nearby window, casting long, peaceful shadows. The background is a clean, white minimalist space with a touch of a green indoor plant, symbolizing growth and spiritual learning. The focus is sharp on the elegant Arabic calligraphy of the pages." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCug2gL-7iy2crt6BqNEP-_2W3GL_F4rMkOFiRKXw-jx7E6XNCpDz2yjPmZnyW9SCk-ySy7PGpdMn7v3BwKZVW47ASIp0R8QyhtUFBhtgvgfsvg-4Q0ENd3ynQNfiuB0L8Yao6i-dIYC5qcBtVPgHADuVUFechfIlBxLow_yCBK7uuVbaTKLlcEEn9061u7Ltk5E4u-K_9b45WdtFGIFbWF13Tq9s09weH3hGfkva0kdmaoQzYhRGINRg')"></div>
+<div class="p-stack-md">
+<span class="text-on-surface-variant font-label-md text-label-md block mb-1">Education • Oct 15</span>
+<h4 class="font-headline-md text-primary mb-2">Quranic Arabic Classes for Adults</h4>
+<p class="text-on-surface-variant text-sm line-clamp-3">New registration for the evening Arabic grammar and tajweed course is now open. Suitable for all proficiency levels.</p>
+</div>
+</div>
+<!-- News Card 3 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/10 bento-card-hover">
+<div class="h-48 bg-cover bg-center" data-alt="A vibrant outdoor shot of a modern community center garden where diverse groups of people are interacting. There are tables with flyers and small bowls of fruit. The setting is bright and airy with lots of greenery and clean architectural lines. The mood is cheerful, welcoming, and community-focused, reflecting a mosque open house or neighborhood social gathering." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBM603b7aYoe8dy5ddFsWdp_xDKSM7ufYkzt1iT0w9MrBxjIFWNo5s97K-mv_BhqN3Qdv2dzo-BHg0BbXD4sevHVFgC2ABScKk9YzRQgaI-Q5h24Ois-fesWoJzOvKIymZV0VRnrw6-ihL5nW_yicAumyANxhF0qL3JNrUvfCxIPz3IU3itIuRM_NlfFUPkfBKKF2AkTC_g99NY4aadnaYT9m3Xld0a4UTNxBYzP7J6hoIHosYhy-e49g')"></div>
+<div class="p-stack-md">
+<span class="text-on-surface-variant font-label-md text-label-md block mb-1">Community • Oct 12</span>
+<h4 class="font-headline-md text-primary mb-2">Interfaith Open House This Weekend</h4>
+<p class="text-on-surface-variant text-sm line-clamp-3">Inviting our neighbors for a day of dialogue, mosque tours, and shared meals. Volunteers needed for the welcome committee.</p>
+</div>
+</div>
+</section>
+<!-- Load More -->
+<div class="flex justify-center mt-stack-lg">
+<button class="px-8 py-3 rounded-full border border-primary text-primary font-bold hover:bg-primary/5 transition-all">
+                Load Older Announcements
+            </button>
+</div>
+</main>
+<!-- Bottom Navigation Bar (Mobile only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 rounded-t-xl border-t border-outline-variant/10 bg-surface/95 backdrop-blur-md shadow-sm">
+<div class="flex justify-around items-center h-20 px-4 pb-2">
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">schedule</span>
+<span class="font-label-md text-label-md">Prayers</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary dark:text-tertiary-fixed-dim font-bold bg-primary/5 rounded-full px-4 py-1 active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">campaign</span>
+<span class="font-label-md text-label-md">News</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">info</span>
+<span class="font-label-md text-label-md">Mosque</span>
+</a>
+</div>
+</nav>
+<script>
+        // Simple search interactivity
+        const searchInput = document.querySelector('input[type="text"]');
+        searchInput.addEventListener('focus', () => {
+            searchInput.parentElement.classList.add('scale-[1.02]');
+        });
+        searchInput.addEventListener('blur', () => {
+            searchInput.parentElement.classList.remove('scale-[1.02]');
+        });
+
+        // Horizontal scroll button highlights
+        const filterButtons = document.querySelectorAll('button.text-label-md');
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => {
+                    b.classList.remove('bg-primary-container', 'text-on-primary-container');
+                    b.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+                });
+                btn.classList.add('bg-primary-container', 'text-on-primary-container');
+                btn.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+            });
+        });
+    </script>
+</body></html>

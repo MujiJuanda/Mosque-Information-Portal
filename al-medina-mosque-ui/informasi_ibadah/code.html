@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Informasi Ibadah - Al-Medina Mosque</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "background": "#fbf9f5",
+                    "on-secondary": "#ffffff",
+                    "outline-variant": "#bfc9c3",
+                    "tertiary": "#003623",
+                    "secondary": "#735c00",
+                    "on-tertiary-fixed": "#002113",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed": "#6ffbbe",
+                    "primary-container": "#064e3b",
+                    "surface": "#fbf9f5",
+                    "on-tertiary-fixed-variant": "#005236",
+                    "on-primary-fixed-variant": "#0b513d",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed": "#241a00",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f5f3ef",
+                    "on-primary-container": "#80bea6",
+                    "primary": "#003527",
+                    "inverse-surface": "#30312e",
+                    "inverse-on-surface": "#f2f0ed",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed-dim": "#4edea3",
+                    "on-secondary-fixed-variant": "#574500",
+                    "secondary-container": "#fed65b",
+                    "surface-dim": "#dbdad6",
+                    "on-surface": "#1b1c1a",
+                    "surface-container-high": "#eae8e4",
+                    "error": "#ba1a1a",
+                    "inverse-primary": "#95d3ba",
+                    "tertiary-container": "#004f34",
+                    "primary-fixed": "#b0f0d6",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#745c00",
+                    "outline": "#707974",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-background": "#1b1c1a",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed": "#ffe088",
+                    "primary-fixed-dim": "#95d3ba",
+                    "surface-bright": "#fbf9f5",
+                    "on-primary-fixed": "#002117",
+                    "surface-container-highest": "#e4e2de",
+                    "surface-tint": "#2b6954",
+                    "on-surface-variant": "#404944",
+                    "surface-container": "#efeeea",
+                    "surface-variant": "#e4e2de",
+                    "on-tertiary-container": "#31c98f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "16px",
+                    "stack-lg": "32px",
+                    "stack-sm": "8px",
+                    "stack-md": "16px",
+                    "unit": "8px",
+                    "container-padding": "24px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Libre Caslon Text"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-xl": ["Libre Caslon Text"],
+                    "headline-md": ["Libre Caslon Text"],
+                    "body-sm": ["Plus Jakarta Sans"],
+                    "headline-lg-mobile": ["Libre Caslon Text"],
+                    "label-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #fbf9f5;
+            color: #1b1c1a;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .girih-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l15 30-15 30-15-30z' fill='%23064e3b' fill-opacity='0.03'/%3E%3C/svg%3E");
+        }
+        .status-badge-pulse {
+            animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse-ring {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .5; }
+        }
+    </style>
+</head>
+<body class="font-body-md">
+<!-- Top App Bar -->
+<header class="bg-surface fixed top-0 left-0 w-full z-50 border-b border-outline-variant/10">
+<div class="flex justify-between items-center px-gutter h-16 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="mosque">mosque</span>
+<h1 class="font-headline-md text-headline-md text-primary tracking-tight">Al-Medina Mosque</h1>
+</div>
+<button class="p-2 rounded-full hover:bg-primary/5 transition-colors active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="notifications">notifications</span>
+</button>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-4xl mx-auto">
+<!-- Header Section -->
+<section class="mb-stack-lg">
+<h2 class="font-headline-lg-mobile md:text-headline-lg text-primary mb-2">Informasi Ibadah</h2>
+<p class="text-on-surface-variant font-body-md">Panduan lengkap ibadah Ramadan dan Syawal 1445H.</p>
+</section>
+<!-- Bento Grid Layout for Sections -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- 1. Ramadan Schedule Card -->
+<div class="bg-surface-container-lowest border border-primary/5 rounded-xl p-6 shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-6xl text-primary" data-icon="dark_mode">dark_mode</span>
+</div>
+<div class="relative z-10">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary" data-icon="calendar_month">calendar_month</span>
+<span class="font-label-md text-primary uppercase tracking-widest">Ramadan Schedule</span>
+</div>
+<h3 class="font-headline-md text-on-surface mb-6">Tarawih Malam Ini</h3>
+<div class="flex items-center justify-between bg-primary/5 p-4 rounded-lg border-l-4 border-primary">
+<div>
+<p class="text-on-surface-variant text-sm">Status Pelaksanaan</p>
+<p class="font-bold text-primary text-xl">YES</p>
+</div>
+<div class="text-right">
+<p class="text-on-surface-variant text-sm">Imam</p>
+<p class="font-medium text-on-surface">Syeikh Ahmad Al-Fatih</p>
+</div>
+</div>
+<div class="mt-6 flex items-center gap-2 text-on-surface-variant text-sm">
+<span class="material-symbols-outlined text-sm" data-icon="info">info</span>
+<span>Mulai ba'da Isya (19:15 WIB)</span>
+</div>
+</div>
+</div>
+<!-- 2. Eid Al-Fitr Announcement -->
+<div class="bg-surface-container-lowest border border-secondary/20 rounded-xl p-6 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-5">
+<span class="material-symbols-outlined text-6xl text-secondary" data-icon="celebration">celebration</span>
+</div>
+<div class="relative z-10">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-secondary" data-icon="campaign">campaign</span>
+<span class="font-label-md text-secondary uppercase tracking-widest">Eid Announcement</span>
+</div>
+<h3 class="font-headline-md text-on-surface mb-6">Penetapan 1 Syawal</h3>
+<div class="flex flex-col gap-4">
+<div class="bg-surface-container-low p-4 rounded-lg flex items-start gap-4">
+<div class="w-3 h-3 rounded-full bg-secondary mt-1.5 status-badge-pulse"></div>
+<div>
+<p class="font-medium text-on-surface">Waiting for official announcement</p>
+<p class="text-sm text-on-surface-variant mt-1">Menunggu Sidang Isbat Kementerian Agama RI malam ini.</p>
+</div>
+</div>
+<button class="w-full py-3 rounded-full border border-secondary text-secondary font-medium hover:bg-secondary/5 transition-colors active:scale-95">
+                            Lihat Live Streaming
+                        </button>
+</div>
+</div>
+</div>
+<!-- 3. Qiyamul Lail Schedule (Full Width on Desktop) -->
+<div class="md:col-span-2 bg-surface-container-lowest border border-primary/5 rounded-xl overflow-hidden shadow-sm">
+<div class="girih-pattern h-12 w-full border-b border-primary/5"></div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="schedule">schedule</span>
+<span class="font-label-md text-primary uppercase tracking-widest">Qiyamul Lail</span>
+</div>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold">10 Hari Terakhir</span>
+</div>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-4 bg-background rounded-lg border border-primary/10 hover:border-primary/30 transition-all cursor-default">
+<div class="flex items-center gap-4">
+<div class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center font-bold">21</div>
+<div>
+<h4 class="font-semibold text-on-surface">Malam Ganjil Pertama</h4>
+<p class="text-sm text-on-surface-variant">Senin, 1 April 2024</p>
+</div>
+</div>
+<div class="text-right">
+<p class="text-primary font-bold">02:00 WIB</p>
+<p class="text-xs text-on-surface-variant">Selesai 03:30</p>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 bg-background rounded-lg border border-primary/10 hover:border-primary/30 transition-all cursor-default">
+<div class="flex items-center gap-4">
+<div class="bg-surface-container-high text-on-surface-variant w-10 h-10 rounded-full flex items-center justify-center font-bold">23</div>
+<div>
+<h4 class="font-semibold text-on-surface">Malam Ganjil Kedua</h4>
+<p class="text-sm text-on-surface-variant">Rabu, 3 April 2024</p>
+</div>
+</div>
+<div class="text-right">
+<p class="text-primary font-bold">02:00 WIB</p>
+<p class="text-xs text-on-surface-variant">Selesai 03:30</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. Zakat Fitrah Information -->
+<div class="md:col-span-2 bg-primary text-white rounded-xl p-8 relative overflow-hidden shadow-lg">
+<!-- Abstract visual element -->
+<div class="absolute -bottom-10 -right-10 w-48 h-48 bg-primary-container rounded-full opacity-20"></div>
+<div class="absolute -top-10 -left-10 w-32 h-32 bg-primary-container rounded-full opacity-20"></div>
+<div class="relative z-10">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div class="max-w-md">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+<span class="font-label-md uppercase tracking-widest text-primary-fixed">Zakat Fitrah 1445H</span>
+</div>
+<h3 class="font-headline-lg-mobile md:text-headline-md mb-4">Tunaikan Kewajiban, Bersihkan Jiwa</h3>
+<p class="opacity-80 text-sm leading-relaxed mb-6">Penerimaan Zakat Fitrah di Masjid Al-Medina dilayani setiap hari pukul 08:00 - 22:00 WIB hingga malam takbiran.</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+<p class="text-xs opacity-70 mb-1">Besaran Beras</p>
+<p class="font-bold text-lg">2.5 kg / 3.5 L</p>
+</div>
+<div class="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+<p class="text-xs opacity-70 mb-1">Besaran Uang</p>
+<p class="font-bold text-lg">Rp 45.000,-</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<button class="bg-secondary-container text-on-secondary-container px-8 py-3 rounded-full font-bold text-sm hover:scale-105 transition-transform active:scale-95 shadow-md">
+                                BAYAR ZAKAT ONLINE
+                            </button>
+<button class="border border-white/30 text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-white/10 transition-colors">
+                                KONFIRMASI PEMBAYARAN
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Community Support Content -->
+<div class="md:col-span-2 mt-8">
+<div class="rounded-xl overflow-hidden h-64 relative">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent z-10"></div>
+<div class="bg-cover bg-center w-full h-full" data-alt="A serene wide shot of a modern mosque interior during sunset. Soft golden light filters through geometric lattice windows, casting patterns across a clean white marble floor and emerald green prayer rugs. The atmosphere is peaceful, minimalist, and spiritual, with high ceilings and a sense of vast tranquility." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBdIxRYyc6WfZwC1S0e_tVtfGgjFfGBrbgNyL4QmsDQpyoTZy2vT82S1w8U8StOhon0jy5q0Ij0NO9S_b1O3GR16R9xOtevSyPLCggV6kV_NR5EiXxfnyfwHxLp0kaS9vcgb3KkuVQXtutLRSVy3CfxP-HkCZVHxNIVg8KBS0Ajpgmf2bNQb2EHVLnW2hTBjv49OxhITRvuIqPxeXOl1aBr3ek0S9XvYQzPDOb0rbsFjpzDhPM9XFqvKQ')"></div>
+<div class="absolute bottom-0 left-0 p-8 z-20">
+<h4 class="text-white font-headline-md mb-2">Relawan Ramadan</h4>
+<p class="text-white/80 text-sm max-w-lg">Dibutuhkan relawan untuk pembagian Takjil dan persiapan I'tikaf. Mari bergabung dalam kebaikan.</p>
+<a class="inline-flex items-center gap-2 text-secondary-container font-bold text-sm mt-4 hover:underline" href="#">
+                            Daftar Relawan <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="bg-surface fixed bottom-0 left-0 w-full z-50 rounded-t-xl border-t border-outline-variant/10 bg-surface/95 backdrop-blur-md shadow-sm">
+<div class="flex justify-around items-center h-20 px-4 pb-2">
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:text-primary transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:text-primary transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="schedule">schedule</span>
+<span class="font-label-md text-label-md">Prayers</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:text-primary transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="campaign">campaign</span>
+<span class="font-label-md text-label-md">News</span>
+</a>
+<!-- ACTIVE TAB: Mosque/Info -->
+<a class="flex flex-col items-center justify-center text-primary dark:text-tertiary-fixed-dim font-bold bg-primary/5 rounded-full px-4 py-1 active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="info">info</span>
+<span class="font-label-md text-label-md">Mosque</span>
+</a>
+</div>
+</nav>
+<script>
+        // Simple micro-interaction for cards
+        document.querySelectorAll('.hover\\:border-primary\\/30').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-2px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body></html>
